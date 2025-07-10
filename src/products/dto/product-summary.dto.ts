@@ -28,4 +28,11 @@ export class ProductSummaryDto {
   })
   @Expose()
   category: ProductCategory;
+
+  @ApiProperty({
+    description: 'Whether the product is active',
+    example: true,
+  })
+  @Expose()
+  isActive: boolean;
 }
